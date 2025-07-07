@@ -5,6 +5,7 @@
 cd build
 
 cmake -G "MinGW Makefiles" ..
+
 cmake --build .
 
 В build должен создаться triangles.exe из исходников. 
