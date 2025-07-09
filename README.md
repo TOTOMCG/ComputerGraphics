@@ -1,13 +1,13 @@
-Имеется кросс-компилированный pre_compiled_triangle.exe для Windows (должен работать). Но это не очень безопасно и этично поэтому:
+Установить mingw для windows:
+https://www.mingw-w64.org/downloads/
 
-Пример для сборки через CMake для MinGW (cmd bash):
+Добавить mingw в PATH для корректной работы.
 
+Пример для сборки через CMake для MinGW:
+```bash
 cd build
-
 cmake -G "MinGW Makefiles" ..
-
 cmake --build .
+```
 
-В build должен создаться triangles.exe из исходников. 
-
-P.S. Я все равно не на этом треке, но попытаться стоило
+В build должен создаться gr_triangle.exe (градиентный треугольник) и square.exe (переливающийся прямоугольник). 
